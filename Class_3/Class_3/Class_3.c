@@ -1,5 +1,4 @@
 #define _CRT_SECURE_NO_WARNINGS 1
-#define _CRT_SECURE_NO_WARNINGS 1
 //注意点：在整个工程中main函数有且只有一个
 
 //作业讲解：
@@ -245,3 +244,23 @@
 //
 //	return 0;
 //}
+
+int MAX(int x, int y)
+{
+	if (x >= y)
+		return x;
+	else
+		return y;
+}
+int main()
+{
+	int a = 0;
+	int b = 0;
+	while (scanf("%d %d", &a, &b) != EOF)
+	{
+		int c = MAX(a, b);
+		printf("%d\n", c);
+	}
+
+	return 0;
+}
